@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 210 210">
+    <path d="M0 0 h75 l25 25 l25 -25 h75 v75 l-25 25 l25 25 v75 h-75 l-25 -25 l-25 25 h-75 v-75 l25 -25 l-25 -25 Z" stroke="#fff" stroke-linejoin="round" stroke-width="10"/>
+    <path d="M0 0 h75 L200 125 v75 h-75 L0 75 Z" fill="#338A85"/>
+    <path d="M200 0 v75 L75 200 h-75 v-75 L125 0 Z" fill="#4C338A"/>
+    Your browser doesn't seem to support SVG.
+</svg>

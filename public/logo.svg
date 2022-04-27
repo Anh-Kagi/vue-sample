@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <path d="M0 0 h75 L200 125 v75 h-75 L0 75 Z" fill="#338A85"/>
+    <path d="M200 0 v75 L75 200 h-75 v-75 L125 0 Z" fill="#4C338A"/>
+    Your browser doesn't seem to support SVG.
+</svg>
