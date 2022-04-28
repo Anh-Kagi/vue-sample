@@ -13,4 +13,5 @@ export default defineConfig({
       "~": fileURLToPath(new URL("/node_modules", import.meta.url)),
     },
   },
+  base: "/vue-sample",
 });

@@ -26,26 +26,26 @@ export default {}; // export component for it to be used in the main app (everyt
       <div class="tile is-ancestor">
         <PersonCard
           title="J. Doe"
-          icon="/logo.svg"
-          img="/logo-outlined.svg"
+          icon="/vue-sample/logo.svg"
+          img="/vue-sample/logo-outlined.svg"
           role="CEO"
         />
         <PersonCard
           title="A. Smith"
-          icon="/logo.svg"
-          img="/logo-outlined.svg"
+          icon="/vue-sample/logo.svg"
+          img="/vue-sample/logo-outlined.svg"
           role="Product Designer"
         />
         <PersonCard
           title="A. Smithee"
-          icon="/logo.svg"
-          img="/logo-outlined.svg"
+          icon="/vue-sample/logo.svg"
+          img="/vue-sample/logo-outlined.svg"
           role="Head of development"
         />
         <PersonCard
           title="B. Wayne"
-          icon="/logo.svg"
-          img="/logo-outlined.svg"
+          icon="/vue-sample/logo.svg"
+          img="/vue-sample/logo-outlined.svg"
           role="Head of marketing"
         />
       </div>
