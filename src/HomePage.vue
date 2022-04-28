@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import PersonCard from "./components/PersonCard.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <script lang="ts">
@@ -46,9 +47,9 @@ export default {};
         />
       </div>
     </section>
-    <!-- team -->
   </main>
-  <!-- footer -->
+
+  <Footer />
 </template>
 
 <style lang="scss">

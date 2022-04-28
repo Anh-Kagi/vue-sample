@@ -7,9 +7,19 @@
     <title>Vite App</title>
     <script type="module" lang="ts">
       import { createApp } from "vue";
+
+      import { library } from "@fortawesome/fontawesome-svg-core";
+      import { faHeart } from "@fortawesome/free-solid-svg-icons";
+      import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
       import HomePage from "./src/HomePage.vue";
+      const app = createApp(HomePage);
+
+      library.add(faHeart);
+
+      app.component("font-awesome-icon", FontAwesomeIcon);
       
-      createApp(HomePage).mount("#app");
+      app.mount("#app");
       </script>
   </head>
   <body id="app"></body>
