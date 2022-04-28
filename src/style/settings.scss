@@ -67,13 +67,13 @@ $variable-columns: true;
 $rtl: false;
 
 // Derived variables
-$primary: $color-pri;
-$info: $color-bis;
-$success: $color-pri;
+$primary: $color-pri; // $turquoise;
+$info: $color-bis; // $cyan;
+$success: $color-pri; // $green;
 $warning: $yellow;
 $danger: $red;
 $light: $white-ter;
-$dark: $grey-darker;
+$dark: $color-ter; // $grey-darker;
 
 $orange-invert: findColorInvert($orange);
 $yellow-invert: findColorInvert($yellow);

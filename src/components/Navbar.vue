@@ -1,28 +1,39 @@
 <script lang="ts" setup>
-import SiteLogo from "./SiteLogo.vue";
+import Logo from "./Logo.vue";
 </script>
 
 <script lang="ts">
-export default {};
+export default {
+  data: () => ({
+    isMenuActive: false,
+  }),
+};
 </script>
 
 <template>
-  <nav class="navbar">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <SiteLogo />
+  <nav class="navbar is-primary">
+    <div class="navbar-brand mx-2">
+      <a href="/" class="is-flex is-align-items-center">
+        <Logo />
+
+        <span class="navbar-item is-size-3">A Définir</span>
       </a>
 
       <a
         role="button"
         class="navbar-burger"
+        :class="{ 'is-active': isMenuActive }"
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
-      ></a>
+        @click="isMenuActive = !isMenuActive"
+      >
+        <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-menu pl-5" :class="{ 'is-active': isMenuActive }">
       <div class="navbar-start">
         <a class="navbar-item"> Home </a>
 
@@ -54,3 +65,11 @@ export default {};
     </div>
   </nav>
 </template>
+
+<style lang="scss" scoped>
+@import "@/style/settings.scss";
+
+.navbar-brand {
+  align-items: center;
+}
+</style>

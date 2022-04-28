@@ -3,13 +3,15 @@ export default {};
 </script>
 
 <template>
-  <a href="/"><img src="/logo-outlined.svg" alt="Logo" /></a>
+  <img src="/logo-outlined.svg" alt="Logo" />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "@/style/settings.scss";
+
 img {
   height: 3em;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s $easing;
 }
 
 img:hover {

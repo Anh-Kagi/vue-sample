@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import NavBar from "./components/NavBar.vue";
+import Navbar from "./components/Navbar.vue";
+import Hero from "./components/Hero.vue";
 </script>
 
 <script lang="ts">
@@ -8,22 +9,18 @@ export default {};
 
 <template>
   <header>
-    <NavBar />
+    <Navbar />
   </header>
-  <!-- hero -->
-  <!-- presentation -->
-  <!-- team -->
+
+  <main>
+    <Hero />
+
+    <!-- presentation -->
+    <!-- team -->
+  </main>
   <!-- footer -->
 </template>
 
 <style lang="scss">
 @import "@/style/base.scss";
-</style>
-
-<style lang="scss" scoped>
-@import "@/style/settings.scss";
-header {
-  background-color: $primary;
-  border-radius: 0 0 0.5rem 0.5rem;
-}
 </style>
