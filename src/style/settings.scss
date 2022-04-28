@@ -1,10 +1,13 @@
-@import "~/bulma/sass/utilities/_all.sass";
+@import "~/bulma/sass/utilities/_all.sass"; // so mixins are availables
 
+// color palette
 $color-pri: #338A85;
 $color-bis: #34568B;
 $color-ter: #4C338A;
 
-// initial variables
+//// bulma parameters
+
+/// initial variables
 $black: hsl(0, 0%, 4%);
 $black-bis:hsl(0, 0%, 7%);
 $black-ter:hsl(0, 0%, 14%);
@@ -68,7 +71,7 @@ $variable-columns: true;
 
 $rtl: false;
 
-// Derived variables
+/// Derived variables
 $primary: $color-pri; // $turquoise;
 $info: $color-bis; // $cyan;
 $success: $color-pri; // $green;
@@ -155,12 +158,11 @@ $shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($schem
 
 $custom-colors: null;
 $custom-shades: null;
-// produces errors
-//$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($danger, $danger-invert, $danger-light, $danger-dark)), $custom-colors);
-//$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades);
+$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($danger, $danger-invert, $danger-light, $danger-dark)), $custom-colors);
+$shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades);
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
 
-// Generic variables
+/// Generic variables
 $body-background-color: $scheme-main;
 $body-size: 16px;
 $body-min-width: 300px;

@@ -13,6 +13,7 @@ module.exports = {
     "vue/setup-compiler-macros": true,
   },
   rules: {
+    // allows for single word components (eg: Logo.vue)
     "vue/multi-word-component-names": "off",
   },
 };

@@ -1,26 +1,29 @@
 <!DOCTYPE html>
+<!-- index page bootstrap -->
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- responsive meta tag -->
     <title>Vite App</title>
     <script type="module" lang="ts">
+      // vue bootstrap function
       import { createApp } from "vue";
 
+      // fontawesome icons
       import { library } from "@fortawesome/fontawesome-svg-core";
-      import { faHeart } from "@fortawesome/free-solid-svg-icons";
+      import { faHeart } from "@fortawesome/free-solid-svg-icons"; // import only required icon
       import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-      import HomePage from "./src/HomePage.vue";
+      import HomePage from "./src/HomePage.vue"; // root component
       const app = createApp(HomePage);
 
-      library.add(faHeart);
+      library.add(faHeart); // add imported icon(s) to library
 
-      app.component("font-awesome-icon", FontAwesomeIcon);
+      app.component("font-awesome-icon", FontAwesomeIcon); // register fontawesome component
       
-      app.mount("#app");
+      app.mount("#app"); // bootstrap vue
       </script>
   </head>
-  <body id="app"></body>
+  <body id="app"></body> <!-- vue component root -->
 </html>

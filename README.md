@@ -1,6 +1,6 @@
-# a-definir
+# A Definir
 
-This template should help get you started developing with Vue 3 in Vite.
+Example workspace for Vite + Vue3 + Bulma + FontAwesome
 
 ## Recommended IDE Setup
 
@@ -43,4 +43,10 @@ npm run build
 
 ```sh
 npm run lint
+```
+
+### Typecheck with vue-tsc
+
+```sh
+npm run typecheck
 ```

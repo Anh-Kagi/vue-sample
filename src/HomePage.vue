@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+// setup means it is executed only once
+// import children components
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import PersonCard from "./components/PersonCard.vue";
@@ -6,7 +8,8 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <script lang="ts">
-export default {};
+// executed at each instanciation of the component
+export default {}; // export component for it to be used in the main app (everything is left ot default, export can only be made onti a non-setup script part)
 </script>
 
 <template>
@@ -53,5 +56,7 @@ export default {};
 </template>
 
 <style lang="scss">
+// not scoped (available globally)
+// import style sheets
 @import "@/style/base.scss";
 </style>
